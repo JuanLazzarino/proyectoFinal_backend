@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RegistrationForm_v7 by Colorlib</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<form method="post" action="../agregar_producto.php" enctype="multipart/form-data">
+					<h3>Agregar producto</h3>
+					<p>Completa los siguientes campos para agragar un producto nuevo al catalogo</p>
+					<label class="form-group" for="nombre_producto">
+						<input type="text" class="form-control" id="nombre_producto" name="nombre_producto" required>
+						<span>Nombre producto</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group" for="descripcion_producto">
+						<textarea name="descripcion_producto" id="descripcion_producto" class="form-control" required></textarea>
+						<span for="">Descripcion</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group" for="precio_por_unidad">
+						<input type="number" class="form-control" name="precio_por_unidad" id="precio_por_unidad" required>
+						<span for="">Precio por unidad</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group" for="cantidad_en_stock" >
+						<input type="number" name="cantidad_en_stock" id="cantidad_en_stock" class="form-control" required></input>
+						<span for="">Cantidad en stock</span>
+						<span class="border"></span>
+					</label>
+					<p>Imagen del producto</p>
+					<label class="form-group" for="imagen">
+						<input  class="form-control" type="file" name="imagen_producto" id="imagen_producto" required>
+						<span class="border"></span>
+					</label>
+					<button type="submit">Agregar
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+		
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
